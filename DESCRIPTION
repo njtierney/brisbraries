@@ -1,0 +1,15 @@
+Package: brisbraries
+Title: Provide Data for Brisbane Libraries
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Nicholas",
+           family = "Tierney",
+           role = c("aut", "cre"),
+           email = "nicholas.tierney@gmail.com")
+Description: Provides tidied up data from the Brisbane library checkouts 
+  "https://www.data.brisbane.qld.gov.au/data/dataset/library-checkouts-branch-date#"
+License: What license it uses
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/njtierney/brisbraries
+BugReports: https://github.com/njtierney/brisbraries/issues
