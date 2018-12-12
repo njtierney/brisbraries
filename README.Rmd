@@ -1,0 +1,44 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+# brisbraries
+
+`brisbraries` provides tidied up data from the [Brisbane library checkouts](https://www.data.brisbane.qld.gov.au/data/dataset/library-checkouts-branch-date#)
+
+## Installation
+
+You can install the released version of brisbraries from github with:
+
+```{r install, eval = FALSE}
+install_github("njtierney/brisbraries")
+```
+
+## Example
+
+Let's 
+
+```{r lib-bris}
+library(brisbraries)
+library(dplyr)
+count(bris_libs_tidy, title, sort = TRUE) 
+count(bris_libs_tidy, item_type, sort = TRUE) 
+count(bris_libs_tidy, age, sort = TRUE) 
+count(bris_libs_tidy, library, sort = TRUE) 
+```
+
+# License
+
+This data is provided under a [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/)
+
+It has been downloaded from [Brisbane library checkouts](https://www.data.brisbane.qld.gov.au/data/dataset/library-checkouts-branch-date#), and tidied up using the code in `data-raw`.
